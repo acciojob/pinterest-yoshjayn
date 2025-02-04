@@ -1,16 +1,73 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest Hero Section</title>
+    <style>
+        /* Styling for the hero container */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+			gap:50px;
+        }
 
+        /* Styling for the image */
+        .hero img {
+            width: 50%;
+            height: 400px;
+            object-fit: cover;
+            /* border-radius: 10px; */
+        }
+
+        /* Styling for the text section */
+        .hero-text {
+            width: 40%;
+            text-align: center;
+        }
+
+        .hero-text h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for the button */
+        .hero-text .explore-btn {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .hero-text .explore-btn:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <div class="hero">
+        <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="object-fit: cover; height:300px; width:900px;"  alt="Hero Image">
+        <div class="hero-text">
+            <h1>Welcome to my Pinterest clone</h1>
+            <p>Discover new inspiration and save your favorite ideas.</p>
+            <a href="#" class="explore-btn">Explore Now</a>
+        </div>
+    </div>
 
 </body>
-
 </html>
